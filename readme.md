@@ -11,7 +11,6 @@ http://felib.justpm.de/github/SimpleLightbox/
 * Header, Content
 	* Header with Headline and Close-Button
 	* Content with scrolling
-	* Optional Footer
 *  ~ 2kb bundled each (js, css)
 * many options
 
@@ -22,8 +21,6 @@ let defaultOptions = {
 	headline: "",
 	// content html (document.getElementById("lightBoxContent").outerHTML)
 	content: "",
-	// footer html (<a href="/where">where</a>)
-	footer: "",
 	// text for close button
 	close: "",
 	// prevent document scrolling if the lightbox is open
