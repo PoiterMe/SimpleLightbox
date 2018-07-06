@@ -2,10 +2,13 @@
 
 A mimalistic, simplistic, fully responsive Lightbox-Plugin. 
 There is no Resizing with JavaScript, all done with pure CSS.
-The Javascript is only for generating and controlling the behavior.
+The Javascript is only for generating and controlling the behavior
+
+## Demo 
+http://felib.justpm.de/github/SimpleLightbox/
 
 ## Features
-* Header, Content, Footer
+* Header, Content
 	* Header with Headline and Close-Button
 	* Content with scrolling
 	* Optional Footer
