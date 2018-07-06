@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="src/css/SimpleLightbox.min.css">
+
+</head>
+<body>
+
+<div id="content">
+	<h1>Test</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At debitis deleniti dicta ea error, facilis ipsa labore nam obcaecati, perferendis perspiciatis quisquam, quos reiciendis sit unde ut voluptas. Consequuntur, natus.</p>
+</div>
+
+<button class="js-lb_img">open Lightbox with Image</button>
+<button class="js-lb_content">open Lightbox with Content</button>
+
+
+<script src="src/js/SimpleLightbox.min.js"></script>
+<script>
+	(function () {
+		var lbImg = new Lightbox({
+			headline: "Image Lightbox",
+			content: "<img src='src/img/bg.jpg' style='width: 100%; height: auto; max-width: 500px'>",
+			closeOnClickOut : false
+		});
+
+		var lbContent = new Lightbox({
+			headline: "Content Lightbox",
+			content: document.getElementById("content").outerHTML
+		});
+
+		var lbOpenImg = document.querySelector(".js-lb_img"),
+			lbOpenContent = document.querySelector(".js-lb_content");
+
+		if (lbOpenImg) lbOpenImg.addEventListener("click", lbImg.open);
+		if (lbOpenContent) lbOpenContent.addEventListener("click", lbContent.open);
+	})();
+
+</script>
+</body>
+</html>
